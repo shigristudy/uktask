@@ -89,13 +89,14 @@
                       <p>Per 500 gms</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_1" value="Pistachio Stollen">
                       <p>BD <span class="item-price" data-price="12.000">12.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="pistachio_stollen">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_1">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="pistachio_stollen_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_1">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -108,13 +109,14 @@
                       <p>Per 500 gms</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_2" value="Christmas Stollen">
                       <p>BD <span class="item-price" data-price="8.000">8.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="christmas_stollen">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_2">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="christmas_stollen_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_2">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -127,13 +129,14 @@
                       <p>Per 1.5 KG</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_3" value="Gingerbread House">
                       <p>BD <span class="item-price" data-price="25.000">25.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="GingerbreadHouse">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_3">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="gingerbreadHouse_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_3">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -146,13 +149,14 @@
                       <p>Per Piece</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                        <input type="hidden" name="row_id_4" value="Gingerbread House">
                       <p>BD <span class="item-price" data-price="1.000">1.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="gingerbread_christmas_cookies">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_4">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="gingerbread_christmas_cookies_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_4">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -165,13 +169,14 @@
                       <p>Per 1 Dozen</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                        <input type="hidden" name="row_id_5" value="Festive French Macarons">
                       <p>BD <span class="item-price" data-price="6.000">6.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="festive_french_macarons">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_5">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="festive_french_macarons_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_5">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -184,13 +189,14 @@
                       <p>Per 1 KG</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_6" value="Christmas Fruit Cake">
                       <p>BD <span class="item-price" data-price="20.000">20.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="christmas_fruit_cake">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_6">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="christmas_fruit_cake_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_6">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -203,13 +209,14 @@
                       <p></p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_7" value="Chocolate Tree With Nuts and Dry Fruits">
                       <p>BD <span class="item-price" data-price="12.000">12.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="chocolate_tree">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_7">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="chocolate_tree_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_7">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -222,13 +229,14 @@
                       <p>Per 500 gms</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_8" value="Cinnamon Apple Strudel">
                       <p>BD <span class="item-price" data-price="10.000">10.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="cinnamon_apple_strudel">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_8">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="cinnamon_apple_strudel_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_8">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -241,13 +249,14 @@
                       <p>Per 100 gms</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_9" value="Mini Panettone">
                       <p>BD <span class="item-price" data-price="3.500">3.500</span></p>
-                      <input type="hidden" class="hidden_item-price" name="mini_panettone">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_9">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="mini_panettone_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_9">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -260,13 +269,14 @@
                       <p>Per 100 gms</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_10" value="Mini Panettone Amarena Cherry">
                       <p>BD <span class="item-price" data-price="3.500">3.500</span></p>
-                      <input type="hidden" class="hidden_item-price" name="mini_panettone_amarena">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_10">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="mini_panettone_amarena_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_10">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -279,13 +289,14 @@
                       <p>Per 600 gms</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_11" value="Panettone Rose Water">
                       <p>BD <span class="item-price" data-price="11.000">11.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="panettone_rose_water">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_11">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="panettone_rose_water_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_11">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -298,13 +309,14 @@
                       <p>Per 1 KG</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_12" value="Panettone Classic">
                       <p>BD <span class="item-price" data-price="15.000">15.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="panettone_classic">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_12">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="panettone_classic_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_12">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -317,13 +329,14 @@
                       <p>Per 1 KG</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_13" value="Panettone Pandoro Classic">
                       <p>BD <span class="item-price" data-price="15.000">15.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="panettone_pandoro_classic">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_13">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="panettone_pandoro_classic_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_13">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -339,13 +352,14 @@
                       <p>Per 1.5 KG</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_14" value="Chocolate Buche De Noel With Crunchy Zatar Tuile">
                       <p>BD <span class="item-price" data-price="20.000">20.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="ChocolateBuche">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_14">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="ChocolateBuche_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_14">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -358,13 +372,14 @@
                       <p>Per 1.5 KG</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_15" value="Classic Madagascar Vanilla">
                       <p>BD <span class="item-price" data-price="20.000">20.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="ClassicMadagascarVanilla">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_15">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="ClassicMadagascarVanilla_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_15">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -377,13 +392,14 @@
                       <p>Per 1.5 KG</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_16" value="Red Velvet Cinnamon">
                       <p>BD <span class="item-price" data-price="20.000">20.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="RedVelvetCinnamon">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_16">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="RedVelvetCinnamon_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_16">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -396,13 +412,14 @@
                       <p>Per 1.5 KG</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_17" value="Saffran Pistachio">
                       <p>BD <span class="item-price" data-price="23.000">23.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="SaffranPistachio">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_17">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="SaffranPistachio_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_17">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -415,13 +432,14 @@
                       <p>Per 1.5 KG</p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <input type="hidden" name="row_id_18" value="Chestnut Marron Glace With Pear">
                       <p>BD <span class="item-price" data-price="23.000">23.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="ChestnutMarronGlace">
+                      <input type="hidden" class="hidden_item-price" name="price_row_id_18">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="ChestnutMarronGlace_qty">
+                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_18">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -461,70 +479,66 @@
   
         <div class="detail-form">
            
-          <h2>personal details</h2>
-          <div class="row">
-            <div class="form-group col-md-6 textfield">
-              <label>Full Name</label>
-              <input type="text" class="form-control" name="full_name" placeholder="Enter Full Name" required>
+             <h2>personal details</h2>
+            <div class="row">
+              <div class="form-group col-md-6 textfield">
+                <label>Full Name</label>
+                <input type="text" class="form-control" name="full_name" placeholder="Enter Full Name" required>
+              </div>
+              <div class="form-group col-md-6 textfield">
+                <label>Company</label>
+                <input type="text" class="form-control" name="company" placeholder="Smith Corporation">
+              </div>
             </div>
-            <div class="form-group col-md-6 textfield">
-              <label>Company</label>
-              <input type="text" class="form-control" name="company" placeholder="Smith Corporation">
+            <div class="row">
+              <div class="form-group col-md-6 textfield">
+                <label>Mobile No</label>
+                <input type="tel" class="form-control" name="mobile_no" placeholder="+973" required>
+              </div>
+              <div class="form-group col-md-6 textfield">
+                <label>Office No</label>
+                <input type="tel" class="form-control" name="office_no" placeholder="+973" required>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="form-group col-md-6 textfield">
-              <label>Mobile No</label>
-              <input type="tel" class="form-control" name="mobile_no" placeholder="+973" required>
+            <div class="row">
+              <div class="form-group col-md-6 textfield">
+                <label>Fax No</label>
+                <input type="tel" class="form-control" name="fax_no" placeholder="+973">
+              </div>
+              <div class="form-group col-md-6 textfield">
+                <label>Email Address</label>
+                <input type="text" class="form-control" name="email" placeholder="Enter Email Address" required>
+              </div>
             </div>
-            <div class="form-group col-md-6 textfield">
-              <label>Office No</label>
-              <input type="tel" class="form-control" name="office_no" placeholder="+973" required>
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-group col-md-6 textfield">
-              <label>Fax No</label>
-              <input type="tel" class="form-control" name="fax_no" placeholder="+973">
-            </div>
-            <div class="form-group col-md-6 textfield">
-              <label>Email Address</label>
-              <input type="text" class="form-control" name="email" placeholder="Enter Email Address" required>
-            </div>
-          </div>
-        {{-- </form>
+       
+            <h2>collection details</h2>
+    
+            <div class="row">
+              <div class="form-group col-md-12 textfield">
+                <label>collection from</label>
+                <select class="form-control select custom-select" name="collect_from">
+                  <option selected>Select Collection From</option>
+                  <option>Al Waha Restaurant, Lobby Level</option>
+                  <option>Cafe Delices</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6 textfield">
+                <label>collection date</label>
+                <input type="text" placeholder="" class="form-control date-picker-input" id="colldate" name="colldate">
+                <img src="assets/img/date.png" class="img-fluid date-icon" alt="">
+              </div>
+              <div class="form-group col-md-6 textfield">
+                <label>Collection Time</label>
+                <select name="" id="" class="form-control select custom-select" name="collect_time">
+                  <option value="0" selected="selected">Select Time</option>
+                  <option value="1">8am  - 12pm</option>
+                  <option value="2">12pm - 4pm</option>
+                  <option value="3">4pm - 8pm</option>
+                </select>
+              </div>
   
-        <form class="detail-form"> --}}
-          <h2>collection details</h2>
+          </div>  
   
-          <div class="row">
-            <div class="form-group col-md-12 textfield">
-              <label>collection from</label>
-              <select class="form-control select custom-select" name="collect_from">
-                <option selected>Select Collection From</option>
-                <option>Al Waha Restaurant, Lobby Level</option>
-                <option>Cafe Delices</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6 textfield">
-              <label>collection date</label>
-              <input type="text" placeholder="" class="form-control date-picker-input" id="colldate" name="colldate">
-              <!-- <input type="date" class="form-control pr-5" placeholder="Select Date" required> -->
-              <img src="assets/img/date.png" class="img-fluid date-icon" alt="">
-            </div>
-            <div class="form-group col-md-6 textfield">
-              <label>Collection Time</label>
-              <select name="" id="" class="form-control select custom-select" name="collect_time">
-                <option value="0" selected="selected">Select Time</option>
-                <option value="1">8am  - 12pm</option>
-                <option value="2">12pm - 4pm</option>
-                <option value="3">4pm - 8pm</option>
-              </select>
-            </div>
-  
-          </div>
-  
-        {{-- </form> --}}
   
         <div class="payment">
           <h2>PAYMENT METHOD</h2>

@@ -25,6 +25,7 @@ class CreateOrdersTable extends Migration
             $table->string('collect_from')->nullable();
             $table->date('colldate')->nullable();
             $table->string('pay')->nullable();
+            $table->string('status');
             $table->timestamps();
         });
     }

@@ -31,6 +31,6 @@ Route::get('/email_template',function(){
     return view('emailorder',compact('data'));
 });
 
-
+Route::get('review_order/{id}','DashboardController@revieworder')->name('revieworder');
 Auth::routes();
 
