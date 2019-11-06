@@ -1,0 +1,509 @@
+.x-mas-2 {
+  background-color: #ffffff;
+  padding: 50px 0px 75px; }
+  .x-mas-2 .christmas-offer {
+    padding-bottom: 70px; }
+    .x-mas-2 .christmas-offer .festive-btn {
+      border: 1px solid #E8E8E8;
+      color: #ffd700;
+      font-size: 18px;
+      font-family: 'AvenirLTStd-Roman';
+      border-radius: 0;
+      padding: 18px 30px;
+      display: inline-block; }
+      .x-mas-2 .christmas-offer .festive-btn:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+      .x-mas-2 .christmas-offer .festive-btn:hover {
+        color: #efcc10; }
+    .x-mas-2 .christmas-offer h2 {
+      text-align: center;
+      font-size: 34px;
+      color: #A92D3E;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+      font-family: 'AvenirLTStd-Roman'; }
+    .x-mas-2 .christmas-offer .logo-sec {
+      padding-bottom: 20px; }
+      .x-mas-2 .christmas-offer .logo-sec .call-us {
+        display: inline-block;
+        float: right;
+        padding-top: 35px; }
+        .x-mas-2 .christmas-offer .logo-sec .call-us span {
+          color: #747474;
+          font-size: 21px;
+          font-family: 'Avenir-Medium'; }
+        .x-mas-2 .christmas-offer .logo-sec .call-us p {
+          margin: 0;
+          color: #000000;
+          font-size: 27px;
+          font-family: 'AvenirLTStd-Roman'; }
+    .x-mas-2 .christmas-offer .christmas-accordian .chris-card {
+      border: none;
+      border-radius: none; }
+      .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-head {
+        background-color: #F6F6F6;
+        border: none;
+        padding: 23px 30px; }
+        .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-head h5 button {
+          width: 100%;
+          text-align: left;
+          color: #000000;
+          font-size: 28px;
+          font-family: 'Avenir-Medium';
+          text-transform: uppercase;
+          padding: 0; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-head h5 button i {
+            float: right;
+            position: relative;
+            top: 8px; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-head h5 button:hover {
+            text-decoration: none; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-head h5 button:focus {
+            text-decoration: none; }
+      .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body {
+        padding: 0px; }
+        .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch {
+          padding: 40px 20px 25px 30px;
+          border-bottom: 1px solid #D5D1D1; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel .signa {
+            color: #000000;
+            font-size: 25px;
+            font-family: 'AvenirLTStd-Roman';
+            text-transform: uppercase;
+            display: block; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel select {
+            width: 60%;
+            height: 73px;
+            background-color: transparent;
+            border: 2px solid #D5D1D1;
+            color: #A7A7A7;
+            font-size: 25px;
+            border-radius: 0;
+            padding-left: 20px;
+            outline: 0;
+            background: -webkit-linear-gradient(45deg, transparent 50%, #bdbdbd 50%), -webkit-linear-gradient(315deg, #bdbdbd 50%, transparent 50%), -webkit-linear-gradient(left, transparent, transparent);
+            background: -o-linear-gradient(45deg, transparent 50%, #bdbdbd 50%), -o-linear-gradient(315deg, #bdbdbd 50%, transparent 50%), -o-linear-gradient(left, transparent, transparent);
+            background: linear-gradient(45deg, transparent 50%, #bdbdbd 50%), linear-gradient(135deg, #bdbdbd 50%, transparent 50%), linear-gradient(to right, transparent, transparent);
+            background-position: calc(100% - 22px) calc(20px + 10px), calc(100% - 11px) calc(20px + 10px), 100% 0;
+            background-size: 10px 11px, 11px 10px, 2.5em 2.5em;
+            background-repeat: no-repeat;
+            border-radius: 6px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-appearance: none;
+            -moz-appearance: none; }
+            .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel select:focus {
+              -webkit-box-shadow: none !important;
+              box-shadow: none !important; }
+            .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel select:placeholder {
+              color: #A7A7A7; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel .include {
+            font-style: italic; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel h3 {
+            color: #000000;
+            font-size: 34px;
+            font-family: 'AvenirLTStd-Roman'; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel p {
+            color: #C89A2E;
+            font-size: 25px;
+            font-family: 'AvenirLTStd-Roman';
+            margin: 0; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .roast-price {
+            padding-top: 60px !important; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .price {
+            padding-top: 10px; }
+            .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .price p {
+              color: #000000;
+              font-size: 28px;
+              font-family: 'Avenir-Medium';
+              margin: 0; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .roast-count {
+            margin-top: 45px; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .counter {
+            width: 153px;
+            border: 1px solid #D6D3D3;
+            height: 65px;
+            display: inline-block;
+            border-radius: 12px; }
+            .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .counter .minus {
+              line-height: 30px;
+              display: inline-block;
+              text-align: center;
+              background-color: #A92D3E;
+              color: #ffffff;
+              font-size: 20px;
+              padding: 17px 11px;
+              border-top-left-radius: 12px;
+              border-bottom-left-radius: 12px; }
+            .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .counter input {
+              height: 20px;
+              width: 63px;
+              text-align: center;
+              border: none;
+              display: inline-block;
+              vertical-align: middle;
+              color: #747474;
+              font-size: 20px;
+              font-family: 'AvenirLTStd-Roman';
+              position: relative;
+              top: -5px; }
+            .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .counter .plus {
+              line-height: 30px;
+              display: inline-block;
+              text-align: center;
+              background-color: #A92D3E;
+              color: #ffffff;
+              font-size: 20px;
+              padding: 17px 11px;
+              border-top-right-radius: 12px;
+              border-bottom-right-radius: 12px; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch:last-child {
+            border: none; }
+        .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .buche-de {
+          padding: 40px 20px 0px 30px;
+          margin-bottom: -25px; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .buche-de h2 {
+            color: #C89A2E;
+            font-size: 34px;
+            font-family: 'AvenirLTStd-Roman';
+            text-align: left;
+            padding: 0;
+            margin: 0; }
+    .x-mas-2 .christmas-offer .bill-info {
+      margin-top: 40px; }
+      .x-mas-2 .christmas-offer .bill-info .sub-total {
+        border-bottom: 1px solid #CFCFCF;
+        padding: 23px 0px; }
+        .x-mas-2 .christmas-offer .bill-info .sub-total p {
+          color: #484848;
+          font-size: 26px;
+          display: inline-block;
+          margin: 0;
+          font-family: 'AvenirLTStd-Roman'; }
+        .x-mas-2 .christmas-offer .bill-info .sub-total span {
+          color: #C89A2E;
+          font-size: 25px;
+          float: right;
+          font-family: 'Avenir-Medium'; }
+      .x-mas-2 .christmas-offer .bill-info .net-total {
+        padding: 23px 0px 0px; }
+        .x-mas-2 .christmas-offer .bill-info .net-total p {
+          color: #000000;
+          font-size: 29px;
+          display: inline-block;
+          margin: 0;
+          font-family: 'Avenir-Medium'; }
+        .x-mas-2 .christmas-offer .bill-info .net-total span {
+          color: #A92D3E;
+          font-size: 32px;
+          font-family: 'Avenir-Heavy';
+          float: right; }
+  .x-mas-2 .personal-detail .detail-form {
+    padding-top: 75px; }
+    .x-mas-2 .personal-detail .detail-form h2 {
+      color: #A92D3E;
+      font-size: 36px;
+      font-family: 'AvenirLTStd-Heavy';
+      text-transform: uppercase;
+      padding-bottom: 50px; }
+    .x-mas-2 .personal-detail .detail-form .textfield {
+      margin-bottom: 50px; }
+      .x-mas-2 .personal-detail .detail-form .textfield label {
+        color: #000000;
+        font-size: 23px;
+        font-family: 'AvenirLTStd-Roman';
+        text-transform: uppercase; }
+      .x-mas-2 .personal-detail .detail-form .textfield input {
+        height: 73px;
+        background-color: transparent;
+        border: 2px solid #E8E8E8;
+        color: #A7A7A7;
+        font-size: 25px;
+        font-family: 'AvenirLTStd-Book';
+        border-radius: 0;
+        padding-left: 20px; }
+        .x-mas-2 .personal-detail .detail-form .textfield input:focus {
+          -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
+        .x-mas-2 .personal-detail .detail-form .textfield input::-webkit-input-placeholder {
+          color: #A7A7A7; }
+        .x-mas-2 .personal-detail .detail-form .textfield input:-ms-input-placeholder {
+          color: #A7A7A7; }
+        .x-mas-2 .personal-detail .detail-form .textfield input::-ms-input-placeholder {
+          color: #A7A7A7; }
+        .x-mas-2 .personal-detail .detail-form .textfield input::placeholder {
+          color: #A7A7A7; }
+      .x-mas-2 .personal-detail .detail-form .textfield .date-icon {
+        position: absolute;
+        right: 35px;
+        top: 57px; }
+      .x-mas-2 .personal-detail .detail-form .textfield select {
+        height: 73px;
+        background-color: transparent;
+        border: 2px solid #E8E8E8;
+        color: #A7A7A7;
+        font-size: 25px;
+        border-radius: 0;
+        padding-left: 20px;
+        outline: 0;
+        background: -webkit-linear-gradient(45deg, transparent 50%, #A7A7A7 50%), -webkit-linear-gradient(315deg, #A7A7A7 50%, transparent 50%), -webkit-linear-gradient(left, transparent, transparent);
+        background: -o-linear-gradient(45deg, transparent 50%, #A7A7A7 50%), -o-linear-gradient(315deg, #A7A7A7 50%, transparent 50%), -o-linear-gradient(left, transparent, transparent);
+        background: linear-gradient(45deg, transparent 50%, #A7A7A7 50%), linear-gradient(135deg, #A7A7A7 50%, transparent 50%), linear-gradient(to right, transparent, transparent);
+        background-position: calc(100% - 22px) calc(20px + 10px), calc(100% - 11px) calc(20px + 10px), 100% 0;
+        background-size: 10px 11px, 11px 10px, 2.5em 2.5em;
+        background-repeat: no-repeat;
+        border-radius: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none; }
+        .x-mas-2 .personal-detail .detail-form .textfield select:focus {
+          -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
+        .x-mas-2 .personal-detail .detail-form .textfield select:placeholder {
+          color: #A7A7A7; }
+  .x-mas-2 .personal-detail .payment {
+    padding-top: 35px; }
+    .x-mas-2 .personal-detail .payment h2 {
+      color: #A92D3E;
+      font-size: 36px;
+      font-family: 'AvenirLTStd-Heavy';
+      padding-bottom: 40px; }
+    .x-mas-2 .personal-detail .payment .pay-radio {
+      margin-bottom: 40px; }
+      .x-mas-2 .personal-detail .payment .pay-radio input {
+        width: 55px;
+        height: 55px; }
+        .x-mas-2 .personal-detail .payment .pay-radio input:checked:after {
+          content: '';
+          background: #B03060;
+          border-radius: 100%;
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          top: 2px;
+          left: 2px;
+          position: relative;
+          margin-right: 1em;
+          vertical-align: top;
+          cursor: pointer;
+          text-align: center;
+          -webkit-transition: all 250ms ease;
+          -o-transition: all 250ms ease;
+          transition: all 250ms ease; }
+      .x-mas-2 .personal-detail .payment .pay-radio label {
+        padding-left: 60px;
+        padding-top: 10px;
+        color: #000000;
+        font-size: 29px;
+        font-family: 'AvenirLTStd-Roman'; }
+        .x-mas-2 .personal-detail .payment .pay-radio label img {
+          position: relative;
+          top: -5px;
+          margin-right: 30px; }
+  .x-mas-2 .personal-detail .next-btn {
+    margin: 0 auto;
+    display: block;
+    background-color: #A92D3E;
+    color: #FFFFFF;
+    font-size: 23px;
+    font-family: 'AvenirLTStd-Roman';
+    border-radius: 0;
+    padding: 18px 30px;
+    width: 253px; }
+    .x-mas-2 .personal-detail .next-btn:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .x-mas-2 .personal-detail .next-btn:hover {
+      background-color: #f6f6f6;
+      color: #A92D3E; }
+  .x-mas-2 .personal-detail .ticket-terms {
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 22px;
+    margin-top: 130px; }
+    .x-mas-2 .personal-detail .ticket-terms h2 {
+      color: #000000;
+      font-size: 28px;
+      font-family: 'AvenirLTStd-Heavy';
+      padding-bottom: 20px; }
+    .x-mas-2 .personal-detail .ticket-terms .terms-nav {
+      padding-left: 30px;
+      margin-bottom: 0; }
+      .x-mas-2 .personal-detail .ticket-terms .terms-nav li {
+        color: #000000;
+        font-size: 21px;
+        font-family: 'AvenirLTStd-Roman'; }
+  .x-mas-2 .personal-detail .we-accept {
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    padding: 45px 30px;
+    margin: 35px 0px; }
+    .x-mas-2 .personal-detail .we-accept h2 {
+      color: #BE842E;
+      font-size: 36px;
+      font-family: 'AvenirLTStd-Heavy'; }
+    .x-mas-2 .personal-detail .we-accept span {
+      width: 40px;
+      border-bottom: 1px solid #BE842E;
+      display: inline-block; }
+    .x-mas-2 .personal-detail .we-accept .cards {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-top: 45px; }
+      .x-mas-2 .personal-detail .we-accept .cards li {
+        margin: 0px 5px; }
+        .x-mas-2 .personal-detail .we-accept .cards li img {
+          width: 65px; }
+        .x-mas-2 .personal-detail .we-accept .cards li:nth-child(1) {
+          position: relative;
+          top: 3px; }
+        .x-mas-2 .personal-detail .we-accept .cards li:nth-child(3) {
+          position: relative;
+          top: 4px; }
+        .x-mas-2 .personal-detail .we-accept .cards li:nth-child(4) {
+          position: relative;
+          top: -10px; }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .x-mas .christmas-offer .christmas-accordian .chris-card .chris-body .touch {
+    padding: 30px 20px 20px 20px; }
+    .x-mas .christmas-offer .christmas-accordian .chris-card .chris-body .touch .price p {
+      font-size: 26px; }
+    .x-mas .christmas-offer .christmas-accordian .chris-card .chris-body .touch .counter {
+      float: right; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel .signa {
+    font-size: 21px; }
+  .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel select {
+    width: 100%;
+    font-size: 18px; }
+  .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel .roast-price {
+    padding-top: 15px; }
+  .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel .roast-count {
+    margin-top: 0; } }
+
+@media only screen and (max-width: 767px) {
+  .x-mas-2 {
+    padding: 40px 0px 75px; }
+    .x-mas-2 .christmas-offer .festive-btn {
+      font-size: 14px;
+      padding: 15px 20px; }
+    .x-mas-2 .christmas-offer h2 {
+      font-size: 23px; }
+    .x-mas-2 .christmas-offer .logo-sec {
+      padding-bottom: 35px;
+      text-align: center; }
+      .x-mas-2 .christmas-offer .logo-sec .logo {
+        width: 30%; }
+      .x-mas-2 .christmas-offer .logo-sec .call-us {
+        padding-top: 25px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px; }
+        .x-mas-2 .christmas-offer .logo-sec .call-us span {
+          font-size: 18px; }
+        .x-mas-2 .christmas-offer .logo-sec .call-us p {
+          font-size: 18px; }
+    .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-head {
+      padding: 18px 20px; }
+      .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-head h5 button {
+        font-size: 16px; }
+    .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body {
+      text-align: center; }
+      .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch {
+        padding: 20px 20px 25px 15px; }
+        .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel .signa {
+          font-size: 18px; }
+        .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel select {
+          width: 100%;
+          font-size: 21px; }
+        .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel h3 {
+          font-size: 20px; }
+        .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .caramel p {
+          font-size: 20px; }
+        .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .price {
+          margin-bottom: 15px; }
+          .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .price p {
+            font-size: 23px; }
+        .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .roast-price {
+          padding-top: 15px !important; }
+        .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .touch .roast-count {
+          margin-top: 0; }
+      .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .buche-de {
+        margin-bottom: 0px; }
+        .x-mas-2 .christmas-offer .christmas-accordian .chris-card .chris-body .buche-de h2 {
+          font-size: 23px;
+          text-align: center; }
+    .x-mas-2 .christmas-offer .bill-info .sub-total {
+      padding: 15px 0px; }
+      .x-mas-2 .christmas-offer .bill-info .sub-total p {
+        font-size: 20px; }
+      .x-mas-2 .christmas-offer .bill-info .sub-total span {
+        font-size: 20px; }
+    .x-mas-2 .christmas-offer .bill-info .net-total {
+      padding: 15px 0px; }
+      .x-mas-2 .christmas-offer .bill-info .net-total p {
+        font-size: 25px; }
+      .x-mas-2 .christmas-offer .bill-info .net-total span {
+        font-size: 25px; }
+    .x-mas-2 .personal-detail .detail-form h2 {
+      font-size: 23px;
+      padding-bottom: 30px; }
+    .x-mas-2 .personal-detail .detail-form .textfield {
+      margin-bottom: 35px; }
+      .x-mas-2 .personal-detail .detail-form .textfield label {
+        font-size: 18px; }
+      .x-mas-2 .personal-detail .detail-form .textfield input {
+        height: 60px;
+        font-size: 21px; }
+      .x-mas-2 .personal-detail .detail-form .textfield select {
+        height: 60px;
+        font-size: 21px; }
+      .x-mas-2 .personal-detail .detail-form .textfield .date-icon {
+        top: 45px; }
+    .x-mas-2 .personal-detail .payment {
+      margin-bottom: 50px; }
+      .x-mas-2 .personal-detail .payment h2 {
+        font-size: 23px; }
+      .x-mas-2 .personal-detail .payment .pay-radio {
+        margin-bottom: 20px; }
+        .x-mas-2 .personal-detail .payment .pay-radio input {
+          width: 35px;
+          height: 35px; }
+          .x-mas-2 .personal-detail .payment .pay-radio input:checked:after {
+            width: 30px;
+            height: 30px; }
+        .x-mas-2 .personal-detail .payment .pay-radio label {
+          padding-left: 40px;
+          font-size: 17px; }
+          .x-mas-2 .personal-detail .payment .pay-radio label img {
+            margin-right: 20px;
+            width: 45px; }
+    .x-mas-2 .personal-detail .next-btn {
+      width: 220px;
+      padding: 13px 30px;
+      font-size: 21px; }
+    .x-mas-2 .personal-detail .ticket-terms {
+      margin-top: 70px; }
+      .x-mas-2 .personal-detail .ticket-terms h2 {
+        font-size: 18px; }
+      .x-mas-2 .personal-detail .ticket-terms .terms-nav li {
+        font-size: 17px;
+        margin-bottom: 5px; }
+    .x-mas-2 .personal-detail .we-accept {
+      padding: 30px 20px; }
+      .x-mas-2 .personal-detail .we-accept h2 {
+        font-size: 28px; }
+      .x-mas-2 .personal-detail .we-accept .cards li {
+        margin-bottom: 10px;
+        position: inherit !important; } }
+
+@media only screen and (max-width: 450px) {
+  .x-mas-2 .christmas-accordian .chris-body .touch .caramel select {
+    font-size: 14px !important; } }

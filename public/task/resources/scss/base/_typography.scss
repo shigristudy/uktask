@@ -1,0 +1,30 @@
+/**
+ *
+ * Fonts and default styling
+ *
+ */
+
+/*=============================
+=            Fonts            =
+=============================*/
+
+@font-face {
+    font-family: 'AvenirLTStd-Heavy';
+    src: url(../../assets/webfonts/AvenirLTStd-Heavy.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Avenir-Heavy';
+    src: url(../../assets/webfonts/Avenir-Heavy.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'AvenirLTStd-Roman';
+    src: url(../../assets/webfonts/AvenirLTStd-Roman.otf) format('opentype');
+}
+@font-face {
+    font-family: 'AvenirLTStd-Book';
+    src: url(../../assets/webfonts/AvenirLTStd-Book.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Avenir-Medium';
+    src: url(../../assets/webfonts/Avenir-Medium.ttf) format('truetype');
+}
