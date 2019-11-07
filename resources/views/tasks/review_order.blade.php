@@ -50,18 +50,21 @@
                     </div>
                 </div>
                 </div>
-                @foreach ($orderlist as $item)
+                @php
+                    $order_list = Session::get('orderlist');
+                @endphp
+                @foreach ($order_list[0] as $item)
                   <div class="touch" style="padding: 10px;">
                     <div class="row">
                       <div class="col-md-6 col-lg-7 col-xl-8 caramel">
-                        <h4>{{ $item->item_name }}</h4>
+                        <h4>{{ $item['name'] }}</h4>
                       </div>
                       
                       <div class="col-md-3 col-lg-3 col-xl-2 price">
-                        <h4>{{ $item->qty }}</h4>
+                        <h4>{{ $item['qty'] }}</h4>
                       </div>
                       <div class="col-md-3 col-lg-2 col-xl-2 price">
-                        <h4>{{ $item->item_price }}</h4>
+                        <h4>{{ $item['price'] }}</h4>
                         </div>
                     </div>
                   </div>
@@ -71,37 +74,40 @@
               </div>
             </div>
         </div>
-  
+        @php
+            $orderdetail = Session::get('orderdetails');
+            $orderdetail = $orderdetail[0];
+        @endphp
         <div class="col-md-5 bill-info float-right p-0">
           <div class="sub-total subtotal">
             <p>Subtotal</p>
-            <span>BD {{ $orderdetail->subtotal }}</span>
-            <input type="hidden" class="subtotal_hidden" name="subtotal_hidden">
+            <span>BD {{ $orderdetail['subtotal_hidden'] }}</span>
           </div>
           <div class="sub-total subtotalevyTax">
             <p>10% Levy Tax</p>
-            <span>BD {{ $orderdetail->lavytax }}</span>
-            <input type="hidden" class="subtotalevyTax_hidden" name="subtotalevyTax_hidden">
+            <span>BD {{ $orderdetail['subtotalevyTax_hidden'] }}</span>
           </div>
           <div class="sub-total subtotaGovtTax">
             <p>10% Govt Tax</p>
-            <span>BD {{ $orderdetail->govtax }}</span>
-            <input type="hidden" class="subtotaGovtTax_hidden" name="subtotaGovtTax_hidden">
+            <span>BD {{ $orderdetail['subtotaGovtTax_hidden'] }}</span>
           </div>
           <div class="net-total">
             <p>Net Total</p>
-            <span>BD {{ $orderdetail->netamount }}</span>
-            <input type="hidden" class="net-total_hidden" name="netotal">
+            <span>BD {{ $orderdetail['netotal'] }}</span>
           </div>
         </div>
-  
       </div>
-  
-
-      </div>
-  
     </div>
   </div>
-  </section>
+</div>
+</section>
+<div class="x-mas-2">
+  <div class="personal-detail">
+    <form method="POST" action="{{ route('confirmorder') }}">
+      @csrf
+      <button type="submit" class="btn next-btn">Yes Order</button>
+    </form>
+  </div>
+</div>
   
 @endsection

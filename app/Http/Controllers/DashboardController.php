@@ -10,6 +10,7 @@ use App\OrderList;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Session;
 
 class DashboardController extends Controller
 {
@@ -38,22 +39,7 @@ class DashboardController extends Controller
     }  
 
     public function store(Request $request){
-        // $order_itmes = $request->except(['full_name','company','mobile_no','office_no','fax_no','email','collect_from','colldate','pay','_token','subtotal_hidden', 'subtotalevyTax_hidden', 'subtotaGovtTax_hidden', 'netotal']);
-        // $ord = array_chunk($order_itmes,3,true);
-        // foreach($ord as $or){
-        //     $keys = array_keys($or);
-        //     if($or[$keys[2]]){
-
-        //         $orderItems[] = [
-        //             'name'  => $or[$keys[0]],
-        //             'price' => $or[$keys[1]],
-        //             'qty'   => $or[$keys[2]],
-        //         ];
-        //     }
-            
-        // }
-        
-        // dd($orderItems);
+                
         $this->validate($request, [
             'full_name'         => ['required', 'string', 'max:255'],
             'company'           => ['required', 'string', 'max:255'],
@@ -67,24 +53,6 @@ class DashboardController extends Controller
             'whole_roast'       => ['required'],
             'whole_roast_price' => ['required'],
         ]);
-        DB::beginTransaction();
-        // Create Order 
-        $order = new Order;
-        $order->full_name      = $request->full_name;
-        $order->company        = $request->company;
-        $order->mobile_no      = $request->mobile_no;
-        $order->office_no      = $request->office_no;
-        $order->fax_no         = $request->fax_no;
-        $order->email          = $request->email;
-        $order->collect_from   = $request->collect_from;
-        $order->colldate       = date('Y-m-d',strtotime($request->colldate));
-        $order->pay            = $request->pay;
-        $order->status         = 'Review';
-        $order->save();
-        // Order items code 
-        // $order_itmes = $request->except(['full_name','company','mobile_no','office_no','fax_no','email','collect_from','colldate','pay','_token','subtotal_hidden', 'subtotalevyTax_hidden', 'subtotaGovtTax_hidden', 'netotal']);
-        // $order_itmes['order_id'] = $order->id;
-        // $order_status = OrderItem::create($order_itmes);
         $order_itmes = $request->except(['full_name','company','mobile_no','office_no','fax_no','email','collect_from','colldate','pay','_token','subtotal_hidden', 'subtotalevyTax_hidden', 'subtotaGovtTax_hidden', 'netotal']);
         $ord = array_chunk($order_itmes,3,true);
         foreach($ord as $or){
@@ -97,8 +65,46 @@ class DashboardController extends Controller
                     'qty'   => $or[$keys[2]],
                 ];
             }
-            
         }
+        Session::push('orderlist', $orderItems);
+        Session::save();
+        Session::push('orderdetails',$request->all());
+        Session::save();
+        return redirect()->route('revieworder');
+        
+    }
+
+
+    public function orders(){
+        $orders = Order::all();
+        return view('tasks.orders',compact('orders'));
+    }
+
+    public function revieworder(){
+        return view('tasks.review_order');
+    }
+    public function confirmorder(Request $request){
+
+        $orderdetail = Session::get('orderdetails');
+        $orderdetail = $orderdetail[0];
+
+        DB::beginTransaction();
+        // Create Order 
+        $order = new Order;
+        $order->full_name      = $orderdetail['full_name'];
+        $order->company        = $orderdetail['company'];
+        $order->mobile_no      = $orderdetail['mobile_no'];
+        $order->office_no      = $orderdetail['office_no'];
+        $order->fax_no         = $orderdetail['fax_no'];
+        $order->email          = $orderdetail['email'];
+        $order->collect_from   = $orderdetail['collect_from'];
+        $order->colldate       = date('Y-m-d',strtotime($orderdetail['colldate']));
+        $order->pay            = $orderdetail['pay'];
+        $order->status         = 'Review';
+        $order->save();
+       
+        $order_list = Session::get('orderlist');
+        $orderItems = $order_list[0];
         foreach($orderItems as $items){
             $or_items = new OrderList;
             $or_items->order_id    = $order->id;
@@ -110,25 +116,19 @@ class DashboardController extends Controller
         if($or_items){
             // Add Order Details
             $order_details = new OrderDetail;
-            $order_details->order_id = $order->id;
-            $order_details->subtotal = $request->subtotal_hidden;
-            $order_details->lavytax = $request->subtotalevyTax_hidden ?? 0;
-            $order_details->govtax = $request->subtotaGovtTax_hidden ?? 0;
-            $order_details->netamount = $request->netotal;
+            $order_details->order_id  = $order->id;
+            $order_details->subtotal  = $orderdetail['subtotal_hidden'];
+            $order_details->lavytax   = $orderdetail['subtotalevyTax_hidden'] ?? 0;
+            $order_details->govtax    = $orderdetail['subtotaGovtTax_hidden'] ?? 0;
+            $order_details->netamount = $orderdetail['netotal'];
             $order_details->save();
             if($order_details){
                 DB::commit();
-                // $order = OrderDetail::where('order_id',$order->id)->first();
-
-                // $items = OrderItem::where('order_id',$order->id)->first()->toArray();
-                // $items1 = $items;
-                // unset($items['order_id'],$items['id'],$items['whole_roast'],$items['created_at'],$items['updated_at']);
-                // $order_items = array_chunk($items,2,true);
-                // $data = ['order_items'=>$order_items,'order'=>$order];
-                // Mail::to($request->email)
-                // ->send(new EmailOrder($data));
-                // $this->revieworder($order->id);
-                return redirect()->route('revieworder',$order->id);
+                
+                $data = ['order_items'=>$orderItems,'order'=>$order_details];
+                Mail::to($orderdetail['email'])
+                ->send(new EmailOrder($data));
+                return redirect()->route('thankyoupage');
             }
         }else{
             DB::rollBack();
@@ -136,19 +136,14 @@ class DashboardController extends Controller
         }  
     }
 
-
-    public function orders(){
-        $orders = Order::all();
-        return view('tasks.orders',compact('orders'));
+    public function thankyoupage(){
+        return view('tasks.thankyoupage');
     }
 
-    public function revieworder($order_id){
-        $order = Order::find($order_id);
-        $orderlist = OrderList::where('order_id',$order_id)->get();
-        $orderdetail = OrderDetail::where('order_id',$order_id)->first();
-        return view('tasks.review_order',compact('order','orderlist','orderdetail'));
-    }
-    public function confirmorder(){
-        
+    public function fetchdetail($id){
+        $order = Order::find($id);
+        $orderitems = OrderList::where('order_id',$id)->get();
+        $order_detail = OrderDetail::where('order_id',$id)->first();
+        return view('admin.invoice',compact('order','orderitems','order_detail'));
     }
 }

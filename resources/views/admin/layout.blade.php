@@ -53,6 +53,7 @@
     <body class="sticky-header">
         <section>
             @include('admin.sidebar')
+            @include('admin.header')
             @yield('content')
         </section>    
             @include('admin.footer')

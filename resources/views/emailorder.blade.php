@@ -41,19 +41,12 @@
                                             <th>Unit Price</th>
                                         </tr>   
                                         @foreach ($data['order_items'] as $key => $item)
-                                            @php
-                                               
-                                                $s = array_keys($item);
-                                                $name = str_replace('_',' ',$s[0]);
-                                            @endphp
-                                            @if ($item[$s[1]] > 0)
-                                                <tr>
-                                                    <td style="text-align:center;padding-top:10px;">{{ $key+1 }}</td>
-                                                    <td style="padding-left:10px;padding-top:10px;">{{ $name }}</td>
-                                                    <td style="text-align:center;padding-top:10px;">{{ $item[$s[1]] }}</td>
-                                                    <td style="text-align:center;padding-top:10px;">{{ $item[$s[0]] }}</td>
-                                                </tr>
-                                            @endif
+                                            <tr>
+                                                <td style="text-align:center;padding-top:10px;">{{ $key+1 }}</td>
+                                                <td style="padding-left:10px;padding-top:10px;">{{ $item['name'] }}</td>
+                                                <td style="text-align:center;padding-top:10px;">{{ $item['qty'] }}</td>
+                                                <td style="text-align:center;padding-top:10px;">{{ $item['price'] }}</td>
+                                            </tr>
                                         @endforeach
                                        
                                    </table>

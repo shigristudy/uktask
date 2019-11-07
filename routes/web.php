@@ -31,6 +31,9 @@ Route::get('/email_template',function(){
     return view('emailorder',compact('data'));
 });
 
-Route::get('review_order/{id}','DashboardController@revieworder')->name('revieworder');
+Route::get('review_order','DashboardController@revieworder')->name('revieworder');
+Route::get('thankyou','DashboardController@thankyoupage')->name('thankyoupage');
+Route::get('invoice/{id}','DashboardController@fetchdetail')->name('fetchorderdetails');
+Route::post('confirmorder','DashboardController@confirmorder')->name('confirmorder');
 Auth::routes();
 
