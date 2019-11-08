@@ -38,15 +38,18 @@
                 <div class="card-body chris-body">
                 <div class="touch" style="padding: 10px;">
                 <div class="row">
-                    <div class="col-md-6 col-lg-7 col-xl-8 caramel">
+                    <div class="col-md-6  caramel">
                         <p>Item Name</p>
                     </div>
                     
-                    <div class="col-md-3 col-lg-3 col-xl-2 caramel">
+                    <div class="col-md-2 caramel">
                         <p>Quantity</p>
                     </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 caramel">
-                        <p>Price</p>
+                    <div class="col-md-2  caramel">
+                        <p>Unit Price</p>
+                    </div>
+                    <div class="col-md-2  caramel">
+                        <p>Total Price</p>
                     </div>
                 </div>
                 </div>
@@ -56,16 +59,22 @@
                 @foreach ($order_list[0] as $item)
                   <div class="touch" style="padding: 10px;">
                     <div class="row">
-                      <div class="col-md-6 col-lg-7 col-xl-8 caramel">
+                      <div class="col-md-6  caramel">
                         <h4>{{ $item['name'] }}</h4>
                       </div>
                       
-                      <div class="col-md-3 col-lg-3 col-xl-2 price">
+                      <div class="col-md-2 price">
                         <h4>{{ $item['qty'] }}</h4>
                       </div>
-                      <div class="col-md-3 col-lg-2 col-xl-2 price">
+                      <div class="col-md-2 price">
                         <h4>{{ $item['price'] }}</h4>
-                        </div>
+                      </div>
+                      <div class="col-md-2 price">
+                        @php
+                            $t_p = $item['price'] * $item['qty'];
+                        @endphp
+                        <h4>{{ number_format((float)$t_p, 3, '.', '') }}</h4>
+                      </div>
                     </div>
                   </div>
                   @endforeach

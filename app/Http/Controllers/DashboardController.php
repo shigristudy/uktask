@@ -35,6 +35,10 @@ class DashboardController extends Controller
     }
 
     public function index(){
+        Session::forget('orderlist');
+        Session::save();
+        Session::forget('orderdetails');
+        Session::save();
     	return view('tasks.index');
     }  
 

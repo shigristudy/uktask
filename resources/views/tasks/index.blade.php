@@ -637,16 +637,17 @@
                   sum += Number($(this).val());
               });
               
-              $('.subtotal').find('span').text(Number(sum));
-              $('.subtotal_hidden').val(Number(sum));
-              var subtotalevyTax = Number((sum *  0.1).toFixed(2));
-              var subtotaGovtTax = Number((sum *  0.1).toFixed(2));
-              $('.subtotalevyTax').find('span').text(subtotalevyTax);
-              $('.subtotalevyTax_hidden').val(subtotalevyTax);
-              $('.subtotaGovtTax').find('span').text(subtotaGovtTax);
-              $('.subtotaGovtTax_hidden').val(subtotalevyTax);
-              $('.net-total').find('span').text((sum + subtotalevyTax + subtotaGovtTax).toFixed(2));
-              $('.net-total_hidden').val((sum + subtotalevyTax + subtotaGovtTax).toFixed(2));
+              $('.subtotal').find('span').text(sum.toFixed(3));
+              $('.subtotal_hidden').val(sum.toFixed(3));
+              
+              var subtotalevyTax = Number((sum *  0.05).toFixed(3));
+              var subtotaGovtTax = Number((sum *  0.05).toFixed(3));
+              $('.subtotalevyTax').find('span').text(subtotalevyTax.toFixed(3));
+              $('.subtotalevyTax_hidden').val(subtotalevyTax.toFixed(3));
+              $('.subtotaGovtTax').find('span').text(subtotaGovtTax.toFixed(3));
+              $('.subtotaGovtTax_hidden').val(subtotalevyTax.toFixed(3));
+              $('.net-total').find('span').text((sum + subtotalevyTax + subtotaGovtTax).toFixed(3));
+              $('.net-total_hidden').val((sum + subtotalevyTax + subtotaGovtTax).toFixed(3));
             }
         });
     </script>
