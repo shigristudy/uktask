@@ -51,6 +51,9 @@
     </head>
 
     <body class="sticky-header">
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
         <section>
             @include('admin.sidebar')
             @include('admin.header')

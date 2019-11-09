@@ -7,6 +7,7 @@ use App\Order;
 use App\OrderDetail;
 use App\OrderItem;
 use App\OrderList;
+use App\Terms;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
@@ -94,7 +95,9 @@ class DashboardController extends Controller
 
         DB::beginTransaction();
         // Create Order 
+        $bill_no = 'XZ-'.strtoupper(substr(md5(uniqid(mt_rand(), true)), 0, 4));
         $order = new Order;
+        $order->order_no       = $bill_no;
         $order->full_name      = $orderdetail['full_name'];
         $order->company        = $orderdetail['company'];
         $order->mobile_no      = $orderdetail['mobile_no'];
@@ -149,5 +152,22 @@ class DashboardController extends Controller
         $orderitems = OrderList::where('order_id',$id)->get();
         $order_detail = OrderDetail::where('order_id',$id)->first();
         return view('admin.invoice',compact('order','orderitems','order_detail'));
+    }
+
+    public function terms(){
+        $terms = Terms::find(1);
+        return view('admin.terms',compact('terms'));
+    }
+    public function termstore(Request $request){
+        $terms = Terms::find(1);
+        if($terms){
+            $terms->terms = $request->terms;
+        }else{
+         $terms = new Terms;
+         $terms->terms = $request->terms;
+        }
+        $terms->save();
+
+        return redirect()->back();
     }
 }

@@ -15,10 +15,10 @@ use App\Order;
 use App\OrderDetail;
 use App\OrderItem;
 
-Route::get('/', 'DashboardController@index')->name('home');
+Route::get('/', 'DashboardController@index')->name('placeorderhome');
 Route::post('/store', 'DashboardController@store')->name('store_order');
 Route::get('/orders', 'DashboardController@orders')->name('allorders');
-Route::get('/allorders', 'DashboardController@allorders')->name('admin.allorders');
+Auth::routes();
 Route::get('/dashboard', 'DashboardController@dashboard')->name('dashboard');
 Route::get('/email_template',function(){
     $order = OrderDetail::where('order_id',1)->first();
@@ -33,7 +33,25 @@ Route::get('/email_template',function(){
 
 Route::get('review_order','DashboardController@revieworder')->name('revieworder');
 Route::get('thankyou','DashboardController@thankyoupage')->name('thankyoupage');
-Route::get('invoice/{id}','DashboardController@fetchdetail')->name('fetchorderdetails');
-Route::post('confirmorder','DashboardController@confirmorder')->name('confirmorder');
-Auth::routes();
 
+Route::post('confirmorder','DashboardController@confirmorder')->name('confirmorder');
+
+
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/allorders', 'DashboardController@allorders')->name('admin.allorders');
+    Route::get('invoice/{id}','DashboardController@fetchdetail')->name('fetchorderdetails');
+    Route::get('terms','DashboardController@terms')->name('terms');
+    Route::post('termstore','DashboardController@termstore')->name('termstore');
+});
+
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+// Roles Routes
+Route::get('roles', 'RolesController@index')->name('roles.index');
+Route::post('roles', 'RolesController@fetch')->name('fetch.roles');
+Route::post('roles/store', 'RolesController@store')->name('store.roles');
+Route::get('/roles/edit/{id}', 'RolesController@edit')->name('edit.roles');
+Route::post('/roles/destory/', 'RolesController@destroy')->name('destory.roles');

@@ -32,7 +32,7 @@
                             <table class="table convert-data-table data-table">
                             <thead>
                             <tr>
-                                <th>#</th>
+                                <th>Order #</th>
                                 <th>Full Name</th>
                                 <th>Company</th>
                                 <th>Mobile No</th>
@@ -50,7 +50,7 @@
                             <tbody>
                                 @foreach ($orders as $item)
                                     <tr>
-                                        <th scope="row">{{ $item->id }}</th>
+                                        <th scope="row">{{ $item->order_no }}</th>
                                         <td>{{ $item->full_name }}</td>
                                         <td>{{ $item->company }}</td>
                                         <td>{{ $item->mobile_no }}</td>

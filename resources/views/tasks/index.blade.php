@@ -10,7 +10,8 @@
             </div>
             @endif
             @if ($errors->any())
-                <div class="alert alert-danger">
+            
+            <div class="alert alert-danger">
                     <ul>
                         @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>
@@ -63,7 +64,7 @@
                       <div class="col-md-3 col-lg-3 col-xl-2">
                         <div class="counter roast-count">
                           <span class="minus"><i class="fas fa-minus"></i></span>
-                          <input type="text" value="0" class="form-control qty-input" name="whole_roast_price_qty">
+                          <input type="text" value="{{old('whole_roast_price_qty') ? old('whole_roast_price_qty') : 0}}" class="form-control qty-input" name="whole_roast_price_qty">
                           <span class="plus"><i class="fas fa-plus"></i></span>
                         </div>
                       </div>
@@ -88,15 +89,16 @@
                       <h3>Pistachio Stollen</h3>
                       <p>Per 500 gms</p>
                     </div>
+                    
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
-                      <input type="hidden" name="row_id_1" value="Pistachio Stollen">
+                      <input type="hidden" name="row_id_1"  value="Pistachio Stollen">
                       <p>BD <span class="item-price" data-price="12.000">12.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_1">
+                      <input type="hidden" value="{{ old('price_row_id_1') ? old('price_row_id_1') : 0}}" class="hidden_item-price" name="price_row_id_1">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_1">
+                        <input type="text" value="{{old('qty_row_id_1') ? old('qty_row_id_1') : 0}}" class="form-control qty-input" name="qty_row_id_1">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -111,12 +113,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_2" value="Christmas Stollen">
                       <p>BD <span class="item-price" data-price="8.000">8.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_2">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_2') ? "('price_row_id_2')": 0}}" name="price_row_id_2">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_2">
+                        <input type="text" value="{{old('qty_row_id_2') ? "('qty_row_id_2')": 0}}" class="form-control qty-input" name="qty_row_id_2">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -131,12 +133,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_3" value="Gingerbread House">
                       <p>BD <span class="item-price" data-price="25.000">25.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_3">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_3') ? "('price_row_id_3')": 0}}" name="price_row_id_3">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_3">
+                        <input type="text" value="{{old('qty_row_id_3') ? "('qty_row_id_3')": 0}}" class="form-control qty-input" name="qty_row_id_3">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -151,12 +153,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                         <input type="hidden" name="row_id_4" value="Gingerbread House">
                       <p>BD <span class="item-price" data-price="1.000">1.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_4">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_4') ? "('price_row_id_4')": 0}}" name="price_row_id_4">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_4">
+                        <input type="text" value="{{old('qty_row_id_5') ? "('qty_row_id_5')": 0}}" class="form-control qty-input" name="qty_row_id_4">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -171,12 +173,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                         <input type="hidden" name="row_id_5" value="Festive French Macarons">
                       <p>BD <span class="item-price" data-price="6.000">6.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_5">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_5') ? "('price_row_id_5')": 0}}" name="price_row_id_5">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_5">
+                        <input type="text" value="{{old('qty_row_id_5') ? "('qty_row_id_5')": 0}}" class="form-control qty-input" name="qty_row_id_5">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -191,12 +193,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_6" value="Christmas Fruit Cake">
                       <p>BD <span class="item-price" data-price="20.000">20.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_6">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_6') ? "('price_row_id_6')": 0}}" name="price_row_id_6">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_6">
+                        <input type="text" value="{{old('qty_row_id_6') ? "('qty_row_id_6')": 0}}" class="form-control qty-input" name="qty_row_id_6">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -211,12 +213,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_7" value="Chocolate Tree With Nuts and Dry Fruits">
                       <p>BD <span class="item-price" data-price="12.000">12.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_7">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_7') ? "('price_row_id_7')": 0}}" name="price_row_id_7">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_7">
+                        <input type="text" value="{{old('qty_row_id_7') ? "('qty_row_id_7')": 0}}" class="form-control qty-input" name="qty_row_id_7">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -231,12 +233,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_8" value="Cinnamon Apple Strudel">
                       <p>BD <span class="item-price" data-price="10.000">10.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_8">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_8') ? "('price_row_id_8')": 0}}" name="price_row_id_8">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_8">
+                        <input type="text" value="{{old('qty_row_id_8') ? "('qty_row_id_8')": 0}}" class="form-control qty-input" name="qty_row_id_8">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -251,12 +253,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_9" value="Mini Panettone">
                       <p>BD <span class="item-price" data-price="3.500">3.500</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_9">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_9') ? "('price_row_id_9')": 0}}" name="price_row_id_9">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_9">
+                        <input type="text" value="{{old('qty_row_id_9') ? "('qty_row_id_9')": 0}}" class="form-control qty-input" name="qty_row_id_9">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -271,12 +273,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_10" value="Mini Panettone Amarena Cherry">
                       <p>BD <span class="item-price" data-price="3.500">3.500</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_10">
-                    </div>
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_10') ? old('price_row_id_10') : 0}}" name="price_row_id_10">
+                    </div>  
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_10">
+                        <input type="text" value="{{old('qty_row_id_10') ? "('qty_row_id_10')": 0}}" class="form-control qty-input" name="qty_row_id_10">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -291,12 +293,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_11" value="Panettone Rose Water">
                       <p>BD <span class="item-price" data-price="11.000">11.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_11">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_11') ? old('price_row_id_11') : 0}}" name="price_row_id_11">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_11">
+                        <input type="text" value="{{old('qty_row_id_11') ? "('qty_row_id_11')": 0}}" class="form-control qty-input" name="qty_row_id_11">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -311,12 +313,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_12" value="Panettone Classic">
                       <p>BD <span class="item-price" data-price="15.000">15.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_12">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_12') ? old('price_row_id_12') : 0}}" name="price_row_id_12">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_12">
+                        <input type="text" value="{{old('qty_row_id_12') ? "('qty_row_id_12')": 0}}" class="form-control qty-input" name="qty_row_id_12">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -331,12 +333,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_13" value="Panettone Pandoro Classic">
                       <p>BD <span class="item-price" data-price="15.000">15.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_13">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_13') ? old('price_row_id_13') : 0}}" name="price_row_id_13">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_13">
+                        <input type="text" value="{{old('qty_row_id_13') ? "('qty_row_id_13')": 0}}" class="form-control qty-input" name="qty_row_id_13">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -354,12 +356,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_14" value="Chocolate Buche De Noel With Crunchy Zatar Tuile">
                       <p>BD <span class="item-price" data-price="20.000">20.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_14">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_14') ? old('price_row_id_14') : 0}}" name="price_row_id_14">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_14">
+                        <input type="text" value="{{old('qty_row_id_14') ? "('qty_row_id_14')": 0}}" class="form-control qty-input" name="qty_row_id_14">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -374,12 +376,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_15" value="Classic Madagascar Vanilla">
                       <p>BD <span class="item-price" data-price="20.000">20.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_15">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_15') ? old('price_row_id_15') : 0}}" name="price_row_id_15">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_15">
+                        <input type="text" value="{{old('qty_row_id_15') ? "('qty_row_id_15')": 0}}" class="form-control qty-input" name="qty_row_id_15">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -394,12 +396,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_16" value="Red Velvet Cinnamon">
                       <p>BD <span class="item-price" data-price="20.000">20.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_16">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_16') ? old('price_row_id_16') : 0}}" name="price_row_id_16">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_16">
+                        <input type="text" value="{{old('qty_row_id_16') ? "('qty_row_id_16')": 0}}" class="form-control qty-input" name="qty_row_id_16">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -414,12 +416,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_17" value="Saffran Pistachio">
                       <p>BD <span class="item-price" data-price="23.000">23.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_17">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_17') ? old('price_row_id_17') : 0}}" name="price_row_id_17">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_17">
+                        <input type="text" value="{{old('qty_row_id_17') ? "('qty_row_id_17')": 0}}" class="form-control qty-input" name="qty_row_id_17">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -434,12 +436,12 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_18" value="Chestnut Marron Glace With Pear">
                       <p>BD <span class="item-price" data-price="23.000">23.000</span></p>
-                      <input type="hidden" class="hidden_item-price" name="price_row_id_18">
+                      <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_18') ? old('price_row_id_18') : 0}}" name="price_row_id_18">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
                       <div class="counter">
                         <span class="minus"><i class="fas fa-minus"></i></span>
-                        <input type="text" value="0" class="form-control qty-input" name="qty_row_id_18">
+                        <input type="text" value="{{old('qty_row_id_18') ? "('qty_row_id_18')": 0}}" class="form-control qty-input" name="qty_row_id_18">
                         <span class="plus"><i class="fas fa-plus"></i></span>
                       </div>
                     </div>
@@ -457,12 +459,12 @@
             <input type="hidden" class="subtotal_hidden" name="subtotal_hidden">
           </div>
           <div class="sub-total subtotalevyTax">
-            <p>10% Levy Tax</p>
+            <p>5% Levy Tax</p>
             <span>BD 0.000</span>
             <input type="hidden" class="subtotalevyTax_hidden" name="subtotalevyTax_hidden">
           </div>
           <div class="sub-total subtotaGovtTax">
-            <p>10% Govt Tax</p>
+            <p>5% Govt Tax</p>
             <span>BD 0.000</span>
             <input type="hidden" class="subtotaGovtTax_hidden" name="subtotaGovtTax_hidden">
           </div>
@@ -479,7 +481,7 @@
   
         <div class="detail-form">
            
-             <h2>personal details</h2>
+            <h2>personal details</h2>
             <div class="row">
               <div class="form-group col-md-6 textfield">
                 <label>Full Name</label>
@@ -510,8 +512,7 @@
                 <input type="text" class="form-control" name="email" placeholder="Enter Email Address" required>
               </div>
             </div>
-       
-            <h2>collection details</h2>
+             <h2>collection details</h2>
     
             <div class="row">
               <div class="form-group col-md-12 textfield">
@@ -594,7 +595,7 @@
         </div>
   
       </div>
-  
+      
     </div>
   </div>
   </section>
