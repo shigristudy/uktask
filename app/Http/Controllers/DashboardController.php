@@ -84,10 +84,7 @@ class DashboardController extends Controller
     }
 
     public function index(){
-        Session::forget('orderlist');
-        Session::save();
-        Session::forget('orderdetails');
-        Session::save();
+        
     	return view('tasks.index');
     }  
 
@@ -183,6 +180,12 @@ class DashboardController extends Controller
                 $data = ['order_items'=>$orderItems,'order'=>$order_details];
                 Mail::to($orderdetail['email'])
                 ->send(new EmailOrder($data));
+
+                Session::forget('orderlist');
+                Session::save();
+                Session::forget('orderdetails');
+                Session::save();
+
                 return redirect()->route('thankyoupage');
             }
         }else{
