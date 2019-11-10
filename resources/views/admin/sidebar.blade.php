@@ -22,6 +22,8 @@
                 <li class="active"><a href="{{ route('dashboard') }}"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
                 <li><a href="{{ route('admin.allorders') }}"><i class="fa fa-home"></i> <span>Orders</span></a></li>
                 <li><a href="{{ route('terms') }}"><i class="fa fa-home"></i> <span>Terms</span></a></li>
+                <li><a href="{{ route('roles.index') }}"><i class="fa fa-home"></i> <span>Roles</span></a></li>
+                <li><a href="{{ route('permission.index') }}"><i class="fa fa-home"></i> <span>Permissions</span></a></li>
                
 
             </ul>

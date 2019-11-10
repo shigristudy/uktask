@@ -58,6 +58,7 @@
 <script src="{{ asset('js/owl.carousel.js') }}"></script>
 
 
+
 <!--common scripts for all pages-->
 
 <script src="{{ asset('js/scripts.js') }}"></script>

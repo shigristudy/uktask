@@ -122,7 +122,7 @@ class RolesController extends Controller
         $role = Role::findOrFail($id);
         $permissions = Permission::all();
         $role_permissions = $role->permissions()->get()->pluck('id')->toArray();
-        return view('admin.settings.edit_roles',compact('permissions','role_permissions','role'));
+        return view('admin.edit_roles',compact('permissions','role_permissions','role'));
     }
 
     // Delete Roles from DB

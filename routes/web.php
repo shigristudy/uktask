@@ -17,7 +17,7 @@ use App\OrderItem;
 
 Route::get('/', 'DashboardController@index')->name('placeorderhome');
 Route::post('/store', 'DashboardController@store')->name('store_order');
-Route::get('/orders', 'DashboardController@orders')->name('allorders');
+
 Auth::routes();
 Route::get('/dashboard', 'DashboardController@dashboard')->name('dashboard');
 Route::get('/email_template',function(){
@@ -43,15 +43,26 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('invoice/{id}','DashboardController@fetchdetail')->name('fetchorderdetails');
     Route::get('terms','DashboardController@terms')->name('terms');
     Route::post('termstore','DashboardController@termstore')->name('termstore');
+
+    // Roles Routes
+    Route::get('roles', 'RolesController@index')->name('roles.index');
+    Route::post('roles', 'RolesController@fetch')->name('fetch.roles');
+    Route::post('roles/store', 'RolesController@store')->name('store.roles');
+    Route::get('/roles/edit/{id}', 'RolesController@edit')->name('edit.roles');
+    Route::post('/roles/destory/', 'RolesController@destroy')->name('destory.roles');
+
+    // Permission Routes
+    Route::get('permission', 'PermissionController@index')->name('permission.index');
+    Route::post('permission', 'PermissionController@fetch')->name('fetch.permission');
+    Route::post('permission/store', 'PermissionController@store')->name('store.permission');
+    Route::post('/permission/edit', 'PermissionController@edit')->name('edit.permission');
+    Route::post('/permission/destory/', 'PermissionController@destroy')->name('destory.permission');
+
+
+    Route::post('/fetchallorders', 'DashboardController@fetchallorders')->name('fetchallorders');
 });
 
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-// Roles Routes
-Route::get('roles', 'RolesController@index')->name('roles.index');
-Route::post('roles', 'RolesController@fetch')->name('fetch.roles');
-Route::post('roles/store', 'RolesController@store')->name('store.roles');
-Route::get('/roles/edit/{id}', 'RolesController@edit')->name('edit.roles');
-Route::post('/roles/destory/', 'RolesController@destroy')->name('destory.roles');

@@ -42,6 +42,13 @@
         <link href="{{ asset('js/data-table/css/dataTables.colVis.min.css') }}" rel="stylesheet">
         <link href="{{ asset('js/data-table/css/dataTables.responsive.css') }}" rel="stylesheet">
         <link href="{{ asset('js/data-table/css/dataTables.scroller.css') }}" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="{{ asset('js/bootstrap-datepicker/css/datepicker.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('js/bootstrap-timepicker/compiled/timepicker.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('js/bootstrap-colorpicker/css/colorpicker.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('js/bootstrap-daterangepicker/daterangepicker-bs3.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('js/bootstrap-datetimepicker/css/datetimepicker.css') }}"/>
+        
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>

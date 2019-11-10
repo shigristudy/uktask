@@ -5,6 +5,7 @@
       <div class="row">
         <div class="col-md-12 christmas-offer">
             @if(Session('message'))
+
             <div class="alert alert-success">
                 <p>{{ Session('message') }}</p>
             </div>

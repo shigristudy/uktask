@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
-
+use DataTables;
 class DashboardController extends Controller
 {
      /**
@@ -30,9 +30,57 @@ class DashboardController extends Controller
         return view('admin.dashboard',compact('orders'));
     }
 
-    public function allorders(){
+    public function allorders(Request $request){
+        
         $orders = Order::all();
         return view('admin.orders',compact('orders'));
+    }
+
+    public function fetchallorders(Request $request){
+
+        if ($request->filterdata) {
+            
+            $fromdate = $request->filterdata[0]['value'];
+            $todate = $request->filterdata[1]['value'];
+            
+            $data = Order::where('full_name','!=',111);
+                    if (!empty($fromdate)) {
+                        
+                        $fromdate = date('y-m-d',strtotime($fromdate));
+                        $data->whereDate('created_at', '>=', $fromdate);
+                    }
+                    if (!empty($todate)) {
+                        $todate = date('y-m-d',strtotime($todate));
+                        $data->whereDate('created_at', '<=', $todate);
+                    }     
+                /*->whereHas('assigns', function ($query) use($assigned_to) {
+                    $query->where('assignedto', '=', $assigned_to);
+                })*/
+                $data->get();
+        } else {
+            $data = Order::orderBy('id','desc')->get();
+        }
+        return DataTables::of($data)
+        ->addColumn('created_at',function($data){
+            return $data->created_at->format('d-M-Y');
+        })
+        ->addColumn('subtotal',function($data){
+            return $data->orderdetails->subtotal;
+        })
+        ->addColumn('lavytax',function($data){
+            return $data->orderdetails->lavytax;
+        })
+        ->addColumn('govtax',function($data){
+            return $data->orderdetails->govtax;
+        })
+        ->addColumn('netamount',function($data){
+            return $data->orderdetails->netamount;
+        })
+        ->addColumn('options',function($data){
+            return '&emsp;<a class="btn btn-primary" href="'.route('fetchorderdetails',$data->id).'">View</a>';
+        })
+        ->rawColumns(['created_at','options','govtax','lavytax','subtotal','netamount'])
+        ->make(true);
     }
 
     public function index(){
