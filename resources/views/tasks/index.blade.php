@@ -93,7 +93,7 @@
                     
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_1"  value="Pistachio Stollen">
-                      <p>BD <span class="item-price" data-price="12.000">12.000</span></p>
+                      <p>BD <span class="item-price" data-price="12.000">{{ old('price_row_id_1') ? old('price_row_id_1') : 12.000}}</span></p>
                       <input type="hidden" value="{{ old('price_row_id_1') ? old('price_row_id_1') : 0}}" class="hidden_item-price" name="price_row_id_1">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -113,7 +113,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_2" value="Christmas Stollen">
-                      <p>BD <span class="item-price" data-price="8.000">8.000</span></p>
+                      <p>BD <span class="item-price" data-price="8.000">{{ old('price_row_id_2') ? old('price_row_id_2') : 8.000}}</span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_2') ? old('price_row_id_2'): 0}}" name="price_row_id_2">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -133,7 +133,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_3" value="Gingerbread House">
-                      <p>BD <span class="item-price" data-price="25.000">25.000</span></p>
+                      <p>BD <span class="item-price" data-price="25.000">{{ old('price_row_id_3') ? old('price_row_id_3') : 25.000}}</span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_3') ? old('price_row_id_3'): 0}}" name="price_row_id_3">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -153,7 +153,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                         <input type="hidden" name="row_id_4" value="Gingerbread House">
-                      <p>BD <span class="item-price" data-price="1.000">1.000</span></p>
+                      <p>BD <span class="item-price" data-price="1.000">{{ old('price_row_id_4') ? old('price_row_id_24) : 1.000<}}/span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_4') ? old('price_row_id_4'): 0}}" name="price_row_id_4">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -173,7 +173,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                         <input type="hidden" name="row_id_5" value="Festive French Macarons">
-                      <p>BD <span class="item-price" data-price="6.000">6.000</span></p>
+                      <p>BD <span class="item-price" data-price="6.000">{{ old('price_row_id_5') ? old('price_row_id_25) : 6.000<}}/span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_5') ? old('price_row_id_5'): 0}}" name="price_row_id_5">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -193,7 +193,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_6" value="Christmas Fruit Cake">
-                      <p>BD <span class="item-price" data-price="20.000">20.000</span></p>
+                      <p>BD <span class="item-price" data-price="20.000">{{ old('price_row_id_6') ? old('price_row_id_6') : 20.000}}</span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_6') ? old('price_row_id_6'): 0}}" name="price_row_id_6">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -213,7 +213,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_7" value="Chocolate Tree With Nuts and Dry Fruits">
-                      <p>BD <span class="item-price" data-price="12.000">12.000</span></p>
+                      <p>BD <span class="item-price" data-price="12.000">{{ old('price_row_id_7') ? old('price_row_id_7') : 12.000}}</span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_7') ? old('price_row_id_7'): 0}}" name="price_row_id_7">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -233,7 +233,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_8" value="Cinnamon Apple Strudel">
-                      <p>BD <span class="item-price" data-price="10.000">10.000</span></p>
+                      <p>BD <span class="item-price" data-price="10.000">{{ old('price_row_id_8') ? old('price_row_id_8') : 10.000}}</span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_8') ? old('price_row_id_8'): 0}}" name="price_row_id_8">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -253,7 +253,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_9" value="Mini Panettone">
-                      <p>BD <span class="item-price" data-price="3.500">3.500</span></p>
+                      <p>BD <span class="item-price" data-price="3.500">{{ old('price_row_id_9') ? old('price_row_id_9') : 3.500<}}/span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_9') ? old('price_row_id_9'): 0}}" name="price_row_id_9">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -273,7 +273,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_10" value="Mini Panettone Amarena Cherry">
-                      <p>BD <span class="item-price" data-price="3.500">3.500</span></p>
+                      <p>BD <span class="item-price" data-price="3.500">{{ old('price_row_id_10') ? old('price_row_id_10') : 3.500<}}/span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_10') ? old('price_row_id_10') : 0}}" name="price_row_id_10">
                     </div>  
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -293,7 +293,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_11" value="Panettone Rose Water">
-                      <p>BD <span class="item-price" data-price="11.000">11.000</span></p>
+                      <p>BD <span class="item-price" data-price="11.000">{{ old('price_row_id_11') ? old('price_row_id_11') : 11.000}}</span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_11') ? old('price_row_id_11') : 0}}" name="price_row_id_11">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -313,7 +313,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_12" value="Panettone Classic">
-                      <p>BD <span class="item-price" data-price="15.000">15.000</span></p>
+                      <p>BD <span class="item-price" data-price="15.000">{{ old('price_row_id_12') ? old('price_row_id_12') : 15.000}}</span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_12') ? old('price_row_id_12') : 0}}" name="price_row_id_12">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -333,7 +333,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_13" value="Panettone Pandoro Classic">
-                      <p>BD <span class="item-price" data-price="15.000">15.000</span></p>
+                      <p>BD <span class="item-price" data-price="15.000">{{ old('price_row_id_13') ? old('price_row_id_13') : 15.000}}</span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_13') ? old('price_row_id_13') : 0}}" name="price_row_id_13">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -356,7 +356,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_14" value="Chocolate Buche De Noel With Crunchy Zatar Tuile">
-                      <p>BD <span class="item-price" data-price="20.000">20.000</span></p>
+                      <p>BD <span class="item-price" data-price="20.000">{{ old('price_row_id_14') ? old('price_row_id_14') : 20.000}}</span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_14') ? old('price_row_id_14') : 0}}" name="price_row_id_14">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -376,7 +376,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_15" value="Classic Madagascar Vanilla">
-                      <p>BD <span class="item-price" data-price="20.000">20.000</span></p>
+                      <p>BD <span class="item-price" data-price="20.000">{{ old('price_row_id_15') ? old('price_row_id_15') : 20.000}}</span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_15') ? old('price_row_id_15') : 0}}" name="price_row_id_15">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -396,7 +396,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_16" value="Red Velvet Cinnamon">
-                      <p>BD <span class="item-price" data-price="20.000">20.000</span></p>
+                      <p>BD <span class="item-price" data-price="20.000">{{ old('price_row_id_16') ? old('price_row_id_16') : 20.000}}</span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_16') ? old('price_row_id_16') : 0}}" name="price_row_id_16">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -416,7 +416,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_17" value="Saffran Pistachio">
-                      <p>BD <span class="item-price" data-price="23.000">23.000</span></p>
+                      <p>BD <span class="item-price" data-price="23.000">{{ old('price_row_id_17') ? old('price_row_id_17') : 23.000}}</span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_17') ? old('price_row_id_17') : 0}}" name="price_row_id_17">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -436,7 +436,7 @@
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 price">
                       <input type="hidden" name="row_id_18" value="Chestnut Marron Glace With Pear">
-                      <p>BD <span class="item-price" data-price="23.000">23.000</span></p>
+                      <p>BD <span class="item-price" data-price="23.000">{{ old('price_row_id_18') ? old('price_row_id_18') : 23.000}}</span></p>
                       <input type="hidden" class="hidden_item-price" value="{{old('price_row_id_18') ? old('price_row_id_18') : 0}}" name="price_row_id_18">
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2">
@@ -605,6 +605,7 @@
 @push('scripts')
     <script>
         $(document).ready(function() {
+            calculateSubtotal();
             $('.minus').click(function () {
               var $input = $(this).parent().find('input');
               var count = parseInt($input.val()) - 1;
